@@ -9,7 +9,7 @@ const AllProducts = () => {
         <div className="product-card" key={product.id}>
           {/* Product Image */}
           <img
-            src={product.image}
+            src={`/public/${product.image}`}
             alt={product.name}
             className="product-image"
           />
