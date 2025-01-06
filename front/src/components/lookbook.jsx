@@ -4,32 +4,32 @@ import "./lookbook.css";
 const lookbookItems = [
   {
     id: 1,
-    image: "/public//3.jpg",
+    image: "/public/3.jpg",
     title: "No Limits Hoodie",
   },
   {
     id: 2,
-    image: "/public//7.jpg",
+    image: "/public/7.jpg",
     title: "Culture is Eternal Shirt",
   },
   {
     id: 3,
-    image: "/public//4.jpg",
+    image: "/public/4.jpg",
     title: "Trucker Cap",
   },
   {
     id: 4,
-    image: "/public//1.jpg",
+    image: "/public/1.jpg",
     title: "Style isn't temporary",
   },
   {
     id: 5,
-    image: "/public//5.jpg",
+    image: "/public/5.jpg",
     title: "XOX Beanie",
   },
   {
     id: 6,
-    image: "/public//6.jpg",
+    image: "/public/6.jpg",
     title: "Culture is Eternal Shirt",
   },
  
