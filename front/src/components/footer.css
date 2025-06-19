@@ -1,12 +1,114 @@
-.footer {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  font-family: "Poppins", sans-serif; /* Apply Poppins font for the section */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-group input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  border-top: 1px solid #333;
+  gap: 40px; /* Added space between Company and Support sections */
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .social-icons a {
-  margin: 0 1rem;
-  color: gold;
-  font-size: 1.5rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.social-icons span {
+  margin-right: 10px;
 }

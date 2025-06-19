@@ -1,34 +1,35 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container } from "react-bootstrap";
-import "./navbar.css";
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import './navbar.css';
+import { FaPhone, FaHeart, FaSignOutAlt, FaUser, FaBars } from 'react-icons/fa';
 
-const CustomNavbar = () => {
+const Header = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <Navbar expand="lg" className="custom-navbar shadow-sm">
-      <Container>
-        {/* Navbar Brand */}
-        <Navbar.Brand className="brand-name">
-          <img src="/xoxlogo.jpg" alt="" className="xoxlogo" />
-        </Navbar.Brand>
-
-        {/* Toggle Button for Mobile */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto nav-links">
-            {/* Links */}
-            <Link to="/" className="nav-item">Home</Link>
-            <Link to="/lookbook" className="nav-item">Collection</Link>
-            <Link to="/catalog" className="nav-item">Catalog</Link>
-            {/* <Link to="/contact" className="nav-item">Contact</Link> */}
-            <Link to="/about" className="nav-item">About</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header className="header">
+      <div className="logo">StudyNerds</div>
+      <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+        <a href="#" className="nav-link">About us</a>
+        <a href="#" className="nav-link">Blog</a>
+        <a href="#" className="contact-btn">Contact us</a>
+        <div className="right-section">
+          <a href="tel:+1234567890" className="call-icon">
+            <FaPhone /> +1-234-567-890
+          </a>
+          <a href="#" className="icon-link"><FaHeart /></a>
+          <a href="#" className="icon-link"><FaSignOutAlt /></a>
+          <a href="#" className="icon-link"><FaUser /></a>
+        </div>
+      </nav>
+      <div className="toggle-btn" onClick={toggleNav}>
+        <FaBars />
+      </div>
+    </header>
   );
 };
 
-export default CustomNavbar;
+export default Header;
